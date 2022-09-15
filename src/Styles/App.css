@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 0.8em;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c8281c;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a92f26;
+}
+nav.nav-bar {
+  height: 15vh;
+  line-height: 10vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+nav.nav-bar ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding-right: 5vw;
+}
+nav.nav-bar ul a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px 0px;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.4s all;
+  position: relative;
+  color: #fff;
+}
+nav.nav-bar ul a:before {
+  content: "";
+  width: 95%;
+  position: absolute;
+  border-bottom: 3px solid #fff;
+  bottom: 0;
+  right: 400px;
+  transition: 0.6s all;
+}
+nav.nav-bar ul a:hover::before {
+  right: 0;
+}
+nav.nav-bar ul a.active {
+  color: #fff;
+  border-bottom: 3px solid red;
+  padding: 5px 15px 2px;
+}
+nav.nav-bar ul a.active::before {
+  border-bottom: none;
+}
+@media only screen and (max-width: 600px) {
+  nav.nav-bar ul a {
+    font-size: 16px;
+  }
+}

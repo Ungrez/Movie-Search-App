@@ -1,0 +1,29 @@
+div.tvContainer {
+  padding: 15vh 3vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  background-color: #000;
+}
+div.tvContainer img {
+  cursor: pointer;
+  height: 300px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+div.tvContainer img:hover {
+  transform: scale(1.1);
+  filter: brightness(60%);
+}
+
+@media only screen and (max-width: 600px) {
+  div.tvContainer {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  div.tvContainer img {
+    height: 230px;
+  }
+}

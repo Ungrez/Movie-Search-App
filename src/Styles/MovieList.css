@@ -1,0 +1,31 @@
+div.movieList {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 -20px 35px 30px black;
+  height: 100%;
+  background-color: black;
+  color: #fff;
+  padding-bottom: 50px;
+}
+div.popularMovies {
+  margin: 0 5vw;
+}
+div.popularMovies img {
+  cursor: pointer;
+  max-height: 50vh;
+  padding: 20px 10px;
+  border-radius: 10%;
+  transition: 0.3s;
+}
+div.popularMovies img:hover {
+  transform: scale(1.1);
+  filter: brightness(60%);
+}
+@media only screen and (max-width: 600px) {
+  div.popularMovies img {
+    height: 250px;
+  }
+  div.popularMovies div.swiper-slide {
+    margin: 50px;
+  }
+}

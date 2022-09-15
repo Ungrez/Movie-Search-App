@@ -1,0 +1,21 @@
+div.footer {
+  position: relative;
+  background-image: url("../Images/footerImage.jpg");
+  height: 50vh;
+}
+div.bottomMenu {
+  text-align: center;
+  line-height: 5vh;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 5vh;
+}
+@media only screen and (max-width: 600px) {
+  div.footer {
+    height: 5vh;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,22 @@
+div.topRatedMovies {
+  margin: 0 5vw 25vh;
+}
+div.topRatedMovies img {
+  cursor: pointer;
+  max-height: 50vh;
+  padding: 20px 10px;
+  border-radius: 10%;
+  transition: 0.3s;
+}
+div.topRatedMovies img:hover {
+  transform: scale(1.1);
+  filter: brightness(60%);
+}
+@media only screen and (max-width: 600px) {
+  div.topRatedMovies img {
+    height: 250px;
+  }
+  div.topRatedMovies div.swiper-slide {
+    margin: 50px;
+  }
+}

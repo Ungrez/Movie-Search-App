@@ -1,0 +1,8 @@
+div.popularMovies {
+  margin: 0 5vw;
+}
+div.popularMovies img {
+  max-height: 50vh;
+  padding: 20px 10px;
+  border-radius: 10%;
+}
